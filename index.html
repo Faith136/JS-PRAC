@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object methods</title>
+    <script type="module" src="Backpack.js"></script>
+    <script type="module" src="color.js"></script>
+</head>
+
+<style>
+    body {
+        margin: 0;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h1 {
+        font-size: 4.6rem;
+    }
+    
+    code {
+        font-size: 120%;
+    }
+    
+    .boxes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        max-width: 60rem;
+    }
+    
+    .title {
+        grid-column: span 2;
+        text-align: center;
+    }
+    
+    .boxes div {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 4rem;
+        font-size: 3rem;
+        color: white;
+        background-color: green;
+    }
+</style>
+<script src="script.js" defer></script>
+</head>
+
+<body>
+    <main class="boxes">
+        <h1 class="title">When <code>var</code> and scope collide!</h1>
+        <div class="left">color: <code class="color-value">green</code></div>
+        <div class="right">color: <code class="color-value">green</code></div>
+    </main>
+</body>
+
+</html>
+<!--<p style="background: black;color:aquamarine; font-size:larger;text-align: center; height: 40px;">FAITH MECHA,FRONT END DEVELOPER.</p>
+    <img src="sp.png" width="80px" height="80px">
+    <p>Hello, am new to this world.
+        </br>Today is my first time trying to code in javascript
+        </br>I have been learning javascript but
+        </br /> have never practiced it when coding.
+        </br>I hope i get along with every content am learning.</p>
+    </br>
+    <div style="background: aqua;">
+        <dl>
+            <dt style="color: blue; text-align: center; font-size: larger;">React</dt>
+            <dd>Is a javascript framework</dd>
+
+        </dl>
+    </div>
+    <button style="color: rgb(8, 10, 10); font-size:large; background: aqua;" onclick="letTest()">Call</button>
+    <script>
+        function letTest() {
+            let x = 5; {
+                let x = 10;
+                alert(x);
+            }
+            alert(x);
+        }
+
+        function add(a, b) {
+            return a + b;
+        }
+        let result = add(6, 2);
+        console.log(result);
+    </script>!->
